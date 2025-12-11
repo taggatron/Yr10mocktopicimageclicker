@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; color: #222; }
+header { padding: 16px 20px; border-bottom: 1px solid #eee; }
+main { display: grid; grid-template-columns: 1fr 280px; gap: 16px; padding: 16px; }
+.canvas { display: flex; align-items: flex-start; justify-content: center; }
+.image-wrapper { position: relative; max-width: 100%; }
+.image-wrapper img { display: block; max-width: 100%; height: auto; border: 1px solid #ddd; }
+.overlay { position: absolute; border: 2px dashed rgba(0, 120, 255, 0.7); background: rgba(0, 120, 255, 0.1); cursor: pointer; transition: transform 0.05s; }
+.overlay:hover { background: rgba(0, 120, 255, 0.2); }
+.overlay.invisible { border: 0; background: transparent; }
+.overlay.editing { border: 2px solid rgba(255, 140, 0, 0.9); background: rgba(255, 140, 0, 0.1); cursor: move; }
+.handle { position: absolute; width: 10px; height: 10px; background: #ff8c00; border: 1px solid #b35f00; border-radius: 2px; }
+.handle.br { right: -6px; bottom: -6px; cursor: se-resize; }
+.handle.tl { left: -6px; top: -6px; cursor: nw-resize; }
+.handle.tr { right: -6px; top: -6px; cursor: ne-resize; }
+.handle.bl { left: -6px; bottom: -6px; cursor: sw-resize; }
+.panel { border-left: 1px solid #eee; padding: 16px; }
+.topic {
+	font-size: 18px;
+	padding: 14px 16px;
+	background: linear-gradient(135deg, #f8f9fb, #eef2ff);
+	border: 1px solid #d9deea;
+	border-radius: 12px;
+	min-height: 64px;
+	display: flex;
+	align-items: center;
+	color: #14213d;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.topic.flash {
+	animation: flashPulse 900ms ease-in-out 1;
+}
+
+@keyframes flashPulse {
+	0%   { transform: scale(1); box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+	30%  { transform: scale(1.03); box-shadow: 0 6px 16px rgba(0, 120, 255, 0.25); background: linear-gradient(135deg, #e6f0ff, #eef6ff); }
+	60%  { transform: scale(0.995); box-shadow: 0 3px 10px rgba(0, 120, 255, 0.15); }
+	100% { transform: scale(1); box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+}
+.btn { margin-top: 12px; padding: 8px 12px; border-radius: 8px; border: 1px solid #e6e8eb; background: #fff; cursor: pointer; }
+.btn:hover { background: #f0f3f7; }
+footer { padding: 8px 16px; border-top: 1px solid #eee; }

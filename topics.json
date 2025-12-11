@@ -1,0 +1,101 @@
+[
+  {
+    "id": "enzyme",
+    "label": "Enzymes",
+    "hint": "Top-left purple/green shape",
+    "x": 80,
+    "y": 105,
+    "w": 269,
+    "h": 251
+  },
+  {
+    "id": "water-bath",
+    "label": "Lab equipment / water bath",
+    "hint": "Top-left brown box with test tubes",
+    "x": 407,
+    "y": 111,
+    "w": 284,
+    "h": 211
+  },
+  {
+    "id": "flask",
+    "label": "Gas syringe and flask",
+    "hint": "Top row glassware",
+    "x": 783,
+    "y": 95,
+    "w": 341,
+    "h": 222
+  },
+  {
+    "id": "lithium",
+    "label": "Periodic table: Lithium",
+    "hint": "Green periodic square",
+    "x": 1216,
+    "y": 129,
+    "w": 181,
+    "h": 189
+  },
+  {
+    "id": "carbon-atom",
+    "label": "Atomic structure: Carbon",
+    "hint": "Atom with shells",
+    "x": 1502,
+    "y": 127,
+    "w": 260,
+    "h": 266
+  },
+  {
+    "id": "ionic-bond",
+    "label": "Ionic bonding: Sodium + Chlorine",
+    "hint": "Red arrow Na -> Cl",
+    "x": 50,
+    "y": 371,
+    "w": 324,
+    "h": 217
+  },
+  {
+    "id": "chlorine-molecule",
+    "label": "Covalent bonding: Cl2",
+    "hint": "Two Cl with dashed bond",
+    "x": 421,
+    "y": 381,
+    "w": 324,
+    "h": 204
+  },
+  {
+    "id": "paper-chromatography",
+    "label": "Paper chromatography",
+    "hint": "Beaker and pencil over paper",
+    "x": 791,
+    "y": 375,
+    "w": 200,
+    "h": 180
+  },
+  {
+    "id": "chromatogram",
+    "label": "Chromatogram / Rf distance",
+    "hint": "Vertical strip with red spot",
+    "x": 1055,
+    "y": 370,
+    "w": 255,
+    "h": 186
+  },
+  {
+    "id": "buckyballs",
+    "label": "Nanoparticles: Fullerenes (buckyballs)",
+    "hint": "Two soccer-ball spheres",
+    "x": 206,
+    "y": 638,
+    "w": 276,
+    "h": 200
+  },
+  {
+    "id": "heating-and-distillation",
+    "label": "Heating and distillation apparatus",
+    "hint": "Bunsen burner + condenser",
+    "x": 550,
+    "y": 641,
+    "w": 319,
+    "h": 221
+  }
+]

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GCSE Combined Science Topic Clicker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>GCSE Combined Science Topic Clicker</h1>
+    <p>Click a sub-image to see the topic it represents.</p>
+  </header>
+
+  <main>
+    <section class="canvas">
+      <!--
+        Using your provided composite image file.
+        Adjust clickable areas via topics.json.
+      -->
+      <div class="image-wrapper">
+        <img id="topicsImage" src="image-1765450376652.png" alt="Science Topics" />
+        <!-- Dynamic overlays injected by script.js -->
+      </div>
+    </section>
+
+    <aside id="panel" class="panel">
+      <div id="selectedTopic" class="topic">No selection yet. Click an icon.</div>
+      <button id="toggleRegions" class="btn">Toggle Region Outlines</button>
+      <button id="toggleEdit" class="btn">Enable Edit Mode</button>
+      <button id="exportJson" class="btn">Export topics.json</button>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Tip: If regions don’t line up, edit coordinates in topics.json.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
